@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">AdoptAmigo</string>
+
+    <string name="bienvenido">Bienvenido</string>
+    <string name="img_adoptar">Tu lugar ideal para adoptar perrios y gatos</string>
+    <string name="img_dar">Encuentra un hogar para tus animalitos</string>
+
+
+    <string name="titulo">Datos del contacto</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Télefono</string>
+    <string name="correo">Correo</string>
+    <string name="adoptar">Adoptar</string>
+
+    <string name="item1">Adoptar</string>
+    <string name="item2">Dar en adopción</string>
+    <string name="buscar">¿Qué buscas?</string>
+
+    <string name="seleccion">Seleccione una categoria</string>
+
+    <string name="imagen">Imagen de la mascota</string>
+    <string name="nombreM">Nombre de la mascota</string>
+    <string name="raza">Raza de la mascota</string>
+    <string name="edad">Edad de la mascota</string>
+
+    <string-array name="mascotas">
+        <item>Perros</item>
+        <item>Gatos</item>
+    </string-array>
+
+    <string name="foto_mascota">Foto de la mascota</string>
+    <string name="nombre_mascota">Nombre de la mascota</string>
+    <string name="tipo_animal">Tipo de animal</string>
+    <string name="razaD">Raza</string>
+    <string name="edad_mascota">Edad</string>
+    <string name="genero">Genero</string>
+    <string name="ubicacion">Ubicacion</string>
+    <string name="color">Color</string>
+    <string name="descripcion">Descripción</string>
+    <string name="quiero_adoptar">¡Quiero adoptarlo!</string>
+    <string name="espacio">|</string>
+
+    <string name="ingrese">Ingrese los datos de la mascota</string>
+    <string name="inserta">Inserta foto</string>
+    <string name="usuario">Ingrese sus datos</string>
+    <string name="enviar">Enviar</string>
+    <string name="cancelar">Cancelar</string>
+
+</resources>
