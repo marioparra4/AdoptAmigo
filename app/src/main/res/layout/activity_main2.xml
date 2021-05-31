@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="@string/seleccion"
         android:textSize="24sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
