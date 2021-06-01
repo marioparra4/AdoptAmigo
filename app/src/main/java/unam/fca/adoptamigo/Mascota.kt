@@ -1,6 +1,7 @@
 package unam.fca.adoptamigo
 
 class Mascota(var imagen: Int,
+              var nombre: String,
               var raza: String,
               var edad: String,
               var genero: String,
