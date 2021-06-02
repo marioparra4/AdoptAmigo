@@ -9,8 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class AdaptadorCard (private val context: Context,
-                     private  val mascotas: MutableList<Mascota>/*,
-                     private val activity: MainActivity*/):
+                     private  val mascotas: MutableList<Mascota>,
+                     private val activity: AdoptarActivity):
     RecyclerView.Adapter<AdaptadorCard.ViewHolder>()    {
 
 
@@ -47,7 +47,7 @@ class AdaptadorCard (private val context: Context,
             itemView.setOnClickListener{
 
                 val mascota: Mascota = mascotas[position]
-                // Dialogo
+                activity.mostarDetalles()
             }
         }
     }

@@ -167,7 +167,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/boton"
+        android:backgroundTint="@color/primario"
         android:id="@+id/enviar"
         />
 
@@ -180,7 +180,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="40dp"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/boton"
+        android:backgroundTint="@color/primario"
         android:id="@+id/cancelar"
         />
 

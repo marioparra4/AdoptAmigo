@@ -1,5 +1,6 @@
 package unam.fca.adoptamigo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -61,9 +62,9 @@ class AdoptarActivity : AppCompatActivity() {
         card.layoutManager = LinearLayoutManager(this)
         card.setHasFixedSize(true)
         if(tipo == "Perros"){
-            card.adapter = AdaptadorCard(this, getPerros())
+            card.adapter = AdaptadorCard(this, getPerros(), this)
         } else {
-            card.adapter = AdaptadorCard(this, getGatos())
+            card.adapter = AdaptadorCard(this, getGatos(), this)
         }
     }
 
@@ -80,10 +81,18 @@ class AdoptarActivity : AppCompatActivity() {
     }
 
     private fun getGatos(): MutableList<Mascota>{
-        var perros: MutableList<Mascota> = mutableListOf()
-        perros.add(Mascota(R.mipmap.perro_max, "MAx", "Labrador", "1 año", "Macho", "Milpa Alta", "Negrp", "Jugueton"))
-        perros.add(Mascota(R.mipmap.perro_max, "MAx", "Labrador", "1 año", "Macho", "Milpa Alta", "Negrp", "Jugueton"))
-        perros.add(Mascota(R.mipmap.perro_max, "MAx", "ssssssssdsdsd", "1 año", "Macho", "Milpa Alta", "Negrp", "Jugueton"))
-        return perros
+        var gatos: MutableList<Mascota> = mutableListOf()
+        gatos.add(Mascota(R.mipmap.gato1, "Nina", "Gato americano", "5 meses", "Hembra", "Benito Juarez", "Negro y blanco", "Pequeña y dormilona"))
+        gatos.add(Mascota(R.mipmap.gato2, "Jair", "Gato", "1 año", "Macho", "Iztacalco", "Gris con blanco", "Medio menso y risueño"))
+        gatos.add(Mascota(R.mipmap.gato3, "Espantado", "Gato americano", "5 meses", "Hembra", "Benito Juarez", "Negro y blanco", "Pequeña y dormilona"))
+        gatos.add(Mascota(R.mipmap.gato4, "Nala", "Bombay", "1 año", "Hembra", "Benito Juarez", "Negro", "Muy juguetona y tierna"))
+        gatos.add(Mascota(R.mipmap.gato5, "Luna", "Korat", "10 meses", "Hembra", "Lindavista", "Blanco", "Pequeña y dormilona"))
+        gatos.add(Mascota(R.mipmap.gato6, "Luffy", "Somalí", "2 años", "Macho", "Ecatepec", "Gris", "Tranquilo y noble"))
+        return gatos
+    }
+
+    fun mostarDetalles() {
+        val intent : Intent = Intent(this, DetallesActivity::class.java)
+        startActivity(intent)
     }
 }
