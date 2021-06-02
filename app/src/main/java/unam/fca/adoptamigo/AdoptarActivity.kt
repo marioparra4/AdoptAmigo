@@ -69,9 +69,13 @@ class AdoptarActivity : AppCompatActivity() {
 
     private fun getPerros(): MutableList<Mascota>{
         var perros: MutableList<Mascota> = mutableListOf()
-        perros.add(Mascota(R.mipmap.perro_max, "MAx", "Labrador", "1 año", "Macho", "Milpa Alta", "Negrp", "Jugueton"))
-        perros.add(Mascota(R.mipmap.perro_max, "MAx", "Labrador", "1 año", "Macho", "Milpa Alta", "Negrp", "Jugueton"))
-        perros.add(Mascota(R.mipmap.perro_max, "MAx", "Labrador", "1 año", "Macho", "Milpa Alta", "Negrp", "Jugueton"))
+        perros.add(Mascota(R.mipmap.perro_max, "Max", "Labrador", "1 año", "Macho", "Milpa Alta", "Negro", "Fiel y jugueton"))
+        perros.add(Mascota(R.mipmap.laika, "Laika", "Mestizo", "2 años", "Hembra", "Coyoacan", "Negro", "Amorosa e inquieta"))
+        perros.add(Mascota(R.mipmap.guera, "Güera", "Golden retriever", "6 meses", "Hembra", "Alvaro Obregón", "Cafe con negro", "Amistosa y fiable"))
+        perros.add(Mascota(R.mipmap.milaneso, "Milaneso", "Dalmata", "2 años", "Macho", "Tlalpan", "Blanco con negro", "Glotón y tierno"))
+        perros.add(Mascota(R.mipmap.camila, "Camila", "Pastor alemán", "3 años", "Hembra", "Miguel Hidalgo", "Cafe con negro", "Juguetona y tierna"))
+        perros.add(Mascota(R.mipmap.bombon, "Bombon", "Mestizo", "1 año", "Macho", "Cuauhtémoc", "Cafe con blanco", "Amoroso y fiel"))
+
         return perros
     }
 
