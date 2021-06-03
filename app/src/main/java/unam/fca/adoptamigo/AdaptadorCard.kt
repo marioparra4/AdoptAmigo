@@ -47,7 +47,7 @@ class AdaptadorCard (private val context: Context,
             itemView.setOnClickListener{
 
                 val mascota: Mascota = mascotas[position]
-                activity.mostarDetalles()
+                activity.mostarDetalles(mascota)
             }
         }
     }

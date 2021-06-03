@@ -91,8 +91,18 @@ class AdoptarActivity : AppCompatActivity() {
         return gatos
     }
 
-    fun mostarDetalles() {
-        val intent : Intent = Intent(this, DetallesActivity::class.java)
+    fun mostarDetalles(mascota: Mascota) {
+
+        val intent : Intent = Intent(this, DetallesActivity()::class.java)
+        intent.putExtra("imagen", mascota.imagen)
+        intent.putExtra("nombre", mascota.nombre)
+        intent.putExtra("raza", mascota.raza)
+        intent.putExtra("edad", mascota.edad)
+        intent.putExtra("genero", mascota.genero)
+        intent.putExtra("ubicacion", mascota.ubicacion)
+        intent.putExtra("color", mascota.color)
+        intent.putExtra("descripcion", mascota.descripcion)
+
         startActivity(intent)
     }
 }
