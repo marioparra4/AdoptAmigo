@@ -7,5 +7,8 @@ class Mascota(var imagen: Int,
               var genero: String,
               var ubicacion: String,
               var color: String,
-              var descripcion: String) {
+              var descripcion: String,
+              var nombreContacto: String,
+              var telefonoContacto: String,
+              var correoContacto: String) {
 }

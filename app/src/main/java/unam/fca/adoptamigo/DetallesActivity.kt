@@ -16,6 +16,7 @@ class DetallesActivity() : AppCompatActivity() {
     private lateinit var tvDescripcion: TextView
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalles)
