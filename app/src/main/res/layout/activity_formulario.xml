@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ingrese"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:gravity="center"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,9 +20,9 @@
         android:id="@+id/ingrese"
         />
 
-    <ImageButton
+    <ImageView
         android:layout_width="120dp"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
         android:src="@mipmap/imagen"
         android:contentDescription="@string/inserta"
         app:layout_constraintTop_toBottomOf="@id/ingrese"
@@ -32,12 +32,24 @@
         android:id="@+id/inserta"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonFoto"
+        android:text="Foto"
+        app:layout_constraintTop_toBottomOf="@id/inserta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/inserta"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="@color/primario"
+        />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/nombre"
         android:autofillHints="@string/nombre"
-        android:ems="12"
+        android:ems="11"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/ingrese"
         app:layout_constraintLeft_toRightOf="@id/inserta"
@@ -51,7 +63,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/razaD"
         android:autofillHints="@string/razaD"
-        android:ems="12"
+        android:ems="11"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/EdNombre"
         app:layout_constraintLeft_toRightOf="@id/inserta"
@@ -65,7 +77,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/edad_mascota"
         android:autofillHints="@string/edad_mascota"
-        android:ems="12"
+        android:ems="11"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/EdRaza"
         app:layout_constraintLeft_toRightOf="@id/inserta"
@@ -83,7 +95,7 @@
         android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/EdEdad"
+        app:layout_constraintTop_toBottomOf="@id/botonFoto"
         android:layout_marginTop="10dp"
         android:id="@+id/EdDescripcion"
         />
@@ -106,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/usuario"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -166,7 +178,7 @@
         app:layout_constraintTop_toBottomOf="@id/EdtTelefonoU"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/primario"
         android:id="@+id/enviar"
         />
@@ -179,7 +191,7 @@
         app:layout_constraintBaseline_toBaselineOf="@id/enviar"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/primario"
         android:id="@+id/cancelar"
         />
