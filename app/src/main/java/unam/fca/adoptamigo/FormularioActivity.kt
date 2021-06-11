@@ -8,11 +8,14 @@ import android.provider.MediaStore
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Toast
 import java.net.URI
 
 class FormularioActivity : AppCompatActivity() {
     private lateinit var imagen : ImageView
     private lateinit var boton: Button
+    private lateinit var enviar: Button
+    private lateinit var cancelar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +23,24 @@ class FormularioActivity : AppCompatActivity() {
 
         imagen = findViewById(R.id.inserta)
         boton = findViewById(R.id.botonFoto)
+        enviar = findViewById(R.id.enviar)
+        cancelar = findViewById(R.id.cancelar)
+
 
         boton.setOnClickListener {
             cargarImagen()
+        }
+
+        enviar.setOnClickListener {
+            val intent =  Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            Toast.makeText(this, "Mascota publicada",
+                Toast.LENGTH_LONG).show()
+        }
+
+        cancelar.setOnClickListener {
+            val intent =  Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -41,4 +59,6 @@ class FormularioActivity : AppCompatActivity() {
         }
 
     }
+
+
 }
