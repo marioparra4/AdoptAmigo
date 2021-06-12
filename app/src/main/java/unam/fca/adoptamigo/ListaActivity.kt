@@ -7,6 +7,7 @@ import android.widget.ListView
 import android.widget.TextView
 import unam.fca.adoptamigo.bd.Contrato
 
+
 class ListaActivity : AppCompatActivity() {
 
     private lateinit var listaMascostas: ListView
