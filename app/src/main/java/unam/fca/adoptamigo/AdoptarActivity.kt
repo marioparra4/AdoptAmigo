@@ -83,7 +83,7 @@ class AdoptarActivity : AppCompatActivity() {
     private fun getGatos(): MutableList<Mascota>{
         var gatos: MutableList<Mascota> = mutableListOf()
         gatos.add(Mascota(R.mipmap.gato1, "Nina", "Gato americano", "5 meses", "Hembra", "Benito Juarez", "Negro y blanco", "Pequeña y dormilona", "Eric Martínez", "5518149030", "eric_martz@hotmail.com"))
-        gatos.add(Mascota(R.mipmap.gato2, "Jair", "Gato", "1 año", "Macho", "Iztacalco", "Gris con blanco", "Medio menso y risueño", "Adopta Mascota", "55 14 83 94","ana@adoptamascota.com"))
+        gatos.add(Mascota(R.mipmap.gato2, "Rocky", "Gato", "1 año", "Macho", "Iztacalco", "Gris con blanco", "Medio menso y risueño", "Adopta Mascota", "55 14 83 94","ana@adoptamascota.com"))
         gatos.add(Mascota(R.mipmap.gato3, "Espantado", "Gato americano", "5 meses", "Hembra", "Benito Juarez", "Negro y blanco", "Pequeña y dormilona", "Huellitas de amor sin fronteras", "5520849331", "huellitas_amor@gmail.com"))
         gatos.add(Mascota(R.mipmap.gato4, "Nala", "Bombay", "1 año", "Hembra", "Benito Juarez", "Negro", "Muy juguetona y tierna", "Jennifer Sanchez", "5532467893", "jenisan@gmail.com"))
         gatos.add(Mascota(R.mipmap.gato5, "Luna", "Korat", "10 meses", "Hembra", "Lindavista", "Blanco", "Pequeña y dormilona", "Nancy Saldivar", "5596784532", "saldivar_n@hotmail.com"))
