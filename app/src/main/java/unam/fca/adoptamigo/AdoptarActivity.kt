@@ -102,7 +102,9 @@ class AdoptarActivity : AppCompatActivity() {
         intent.putExtra("ubicacion", mascota.ubicacion)
         intent.putExtra("color", mascota.color)
         intent.putExtra("descripcion", mascota.descripcion)
-
+        intent.putExtra("nombreContacto", mascota.nombreContacto)
+        intent.putExtra("telefonoContacto", mascota.telefonoContacto)
+        intent.putExtra("correoContacto", mascota.correoContacto)
         startActivity(intent)
     }
 }

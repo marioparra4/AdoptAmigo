@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@id/titulo"
         android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
-        android:id="@+id/nombre"
+        android:id="@+id/nombreDialog"
         />
 
     <TextView
@@ -39,10 +39,10 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombre"
+        app:layout_constraintTop_toBottomOf="@id/nombreDialog"
         android:layout_marginTop="15dp"
         android:layout_marginStart="10dp"
-        android:id="@+id/telefono"
+        android:id="@+id/telefonoDialog"
         />
 
     <TextView
@@ -52,10 +52,10 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/telefono"
+        app:layout_constraintTop_toBottomOf="@id/telefonoDialog"
         android:layout_marginTop="15dp"
         android:layout_marginStart="10dp"
-        android:id="@+id/correo"
+        android:id="@+id/correoDialog"
         />
 
     <Button
@@ -66,7 +66,8 @@
         android:backgroundTint="#A77C34"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/correo"
+        app:layout_constraintTop_toBottomOf="@id/correoDialog"
         android:layout_marginTop="20dp"
+        android:id="@+id/Adoptar"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
