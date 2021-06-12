@@ -25,7 +25,7 @@ object Contrato {
                 val COLUMNA_NOMBRECONTACTO = "nombreContacto"
                 val COLUMNA_TELEFONOCONTACTO = "telefono"
                 val COLUMNA_CORREOCONTACTO = "correo"
-
+                val COLUMNA_IMAGEN = "imagen"
 
                 var AUTORIDAD = "unam.fca.adoptamigo"
                 var MASCOTA_URI = Uri.parse( "content://"+
@@ -43,7 +43,8 @@ object Contrato {
                                 + COLUMNA_DESCRIPCION + " TEXT, "
                                 + COLUMNA_NOMBRECONTACTO + " TEXT, "
                                 + COLUMNA_TELEFONOCONTACTO + " TEXT, "
-                                + COLUMNA_CORREOCONTACTO + " TEXT)"
+                                + COLUMNA_CORREOCONTACTO + " TEXT, "
+                                + COLUMNA_IMAGEN + " BLOB )"
                         )
 
                 val BORRA_TABLA_MASCOTAS = "DROP TABLE IF EXISTS $TABLA_MASCOTAS"

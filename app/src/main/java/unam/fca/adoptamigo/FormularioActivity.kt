@@ -2,16 +2,18 @@ package unam.fca.adoptamigo
 
 import android.content.ContentValues
 import android.content.Intent
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextUtils
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import unam.fca.adoptamigo.bd.Contrato
-import java.net.URI
+import java.io.ByteArrayOutputStream
+
 
 class FormularioActivity : AppCompatActivity() {
     val REQUEST_CODE = 1000
@@ -59,7 +61,10 @@ class FormularioActivity : AppCompatActivity() {
             if(TextUtils.isEmpty(nombre.text)) {
                 mostrarMsg("El nombre de la mascota no puede estar vacio", false)
             }
+
+
             val values = ContentValues()
+
             values.put(Contrato.Mascotas.COLUMNA_NOMBRE, nombre.text.toString())
             values.put(Contrato.Mascotas.COLUMNA_RAZA, raza.text.toString())
             values.put(Contrato.Mascotas.COLUMNA_EDAD, edad.text.toString())
@@ -70,6 +75,7 @@ class FormularioActivity : AppCompatActivity() {
             values.put(Contrato.Mascotas.COLUMNA_NOMBRECONTACTO, nombreContacto.text.toString())
             values.put(Contrato.Mascotas.COLUMNA_TELEFONOCONTACTO, telefono.text.toString())
             values.put(Contrato.Mascotas.COLUMNA_CORREOCONTACTO, correo.text.toString())
+            values.put(Contrato.Mascotas.COLUMNA_IMAGEN, imageViewToByte(imagen))
 
             val newUri = contentResolver.insert(Contrato.Mascotas.MASCOTA_URI, values)
             val newUserId = newUri!!.lastPathSegment
@@ -98,6 +104,7 @@ class FormularioActivity : AppCompatActivity() {
         if(resultCode == RESULT_OK){
             val uri = data?.data
             imagen.setImageURI(uri)
+
             val vacio = ""
             nombre.text = vacio.toEditable()
             raza.text = vacio.toEditable()
@@ -132,5 +139,11 @@ class FormularioActivity : AppCompatActivity() {
         }
     }
 
+    fun imageViewToByte(image: ImageView): ByteArray? {
+        val bitmap = (image.drawable as BitmapDrawable).bitmap
+        val stream = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
+        return stream.toByteArray()
+    }
 
 }

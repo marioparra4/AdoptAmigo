@@ -34,7 +34,8 @@ class ListaActivity : AppCompatActivity() {
             Contrato.Mascotas.COLUMNA_DESCRIPCION,
             Contrato.Mascotas.COLUMNA_NOMBRECONTACTO,
             Contrato.Mascotas.COLUMNA_TELEFONOCONTACTO,
-            Contrato.Mascotas.COLUMNA_CORREOCONTACTO
+            Contrato.Mascotas.COLUMNA_CORREOCONTACTO,
+            Contrato.Mascotas.COLUMNA_IMAGEN
         )
         val selection = ""
         val selectionArgs: Array<String>? = null
@@ -45,8 +46,6 @@ class ListaActivity : AppCompatActivity() {
         if(cursor != null) {
             mAdapter = AdaptadorLista(this, cursor, 0)
             listaMascostas.adapter = mAdapter
-        } else { // "No hay datos de contactos."
-            //titulo.text = getString(R.string.sin_contactos)
         }
     }
 }

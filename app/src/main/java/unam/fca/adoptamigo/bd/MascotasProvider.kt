@@ -23,7 +23,8 @@ class MascotasProvider: ContentProvider() {
         Contrato.Mascotas.COLUMNA_DESCRIPCION,
         Contrato.Mascotas.COLUMNA_NOMBRECONTACTO,
         Contrato.Mascotas.COLUMNA_TELEFONOCONTACTO,
-        Contrato.Mascotas.COLUMNA_CORREOCONTACTO
+        Contrato.Mascotas.COLUMNA_CORREOCONTACTO,
+        Contrato.Mascotas.COLUMNA_IMAGEN
     )
 
     override fun onCreate(): Boolean {

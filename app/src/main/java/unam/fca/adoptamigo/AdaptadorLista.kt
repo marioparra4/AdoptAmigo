@@ -2,13 +2,16 @@ package unam.fca.adoptamigo
 
 import android.content.Context
 import android.database.Cursor
+import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CursorAdapter
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import unam.fca.adoptamigo.bd.Contrato
+
 
 class AdaptadorLista(context: Context, cur: Cursor, flags: Int):
     CursorAdapter(context, cur, flags), View.OnClickListener {
@@ -29,6 +32,7 @@ class AdaptadorLista(context: Context, cur: Cursor, flags: Int):
 
     override fun bindView(view: View?, context: Context?, cursor: Cursor?) {
 
+        val itemImagen = view?.findViewById<ImageView>(R.id.itemImagen)
         val itemNombre = view?.findViewById<TextView>(R.id.itemNombre)
         val itemRaza = view?.findViewById<TextView>(R.id.itemRaza)
         val itemEdad = view?.findViewById<TextView>(R.id.itemEdad)
@@ -70,6 +74,10 @@ class AdaptadorLista(context: Context, cur: Cursor, flags: Int):
         val correo = cursor?.getString(
             cursor.getColumnIndex(Contrato.Mascotas.COLUMNA_CORREOCONTACTO)
         )
+
+        val imagen: ByteArray? = cursor?.getBlob(
+            cursor.getColumnIndex(Contrato.Mascotas.COLUMNA_IMAGEN))
+
         itemNombre?.text = nombre
         itemRaza?.text = raza
         itemEdad?.text = edad
@@ -80,6 +88,12 @@ class AdaptadorLista(context: Context, cur: Cursor, flags: Int):
         itemNombreContacto?.text = nombreContacto
         itemTelefono?.text = telefono
         itemCorreo?.text = correo
+
+        if (imagen != null ) {
+            val bitmap = BitmapFactory.decodeByteArray(imagen, 0, imagen.size)
+            itemImagen?.setImageBitmap(bitmap)
+        }
+
         position = cursor!!.position
         view!!.setOnClickListener(this)
     }
