@@ -35,25 +35,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tipo_animal"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:text="@string/razaD"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@id/imgMascota"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/txvTipoMascota"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/razaD"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@id/txvTipoMascota"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="3dp"
         android:id="@+id/txvRaza"
         />
 
