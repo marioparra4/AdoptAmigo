@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/itemNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_mascota"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/raza"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genero"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ubicacion"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/color"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefono"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+    <TextView
+        android:id="@+id/itemCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:textSize="10sp"
+        android:padding="3dp" />
+
+</LinearLayout>
