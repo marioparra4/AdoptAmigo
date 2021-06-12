@@ -22,7 +22,7 @@ class ListaActivity : AppCompatActivity() {
     }
 
     private fun cargaMascotas() {
-        val contactoUri = Contrato.Mascotas.CONTACTO_URI
+        val mascotaUri = Contrato.Mascotas.MASCOTA_URI
         val projection = arrayOf(
             Contrato.Mascotas.COLUMNA_ID,
             Contrato.Mascotas.COLUMNA_NOMBRE,
@@ -40,7 +40,7 @@ class ListaActivity : AppCompatActivity() {
         val selectionArgs: Array<String>? = null
         val sortOrder: String? = null
 
-        val cursor = contentResolver.query(contactoUri, projection,
+        val cursor = contentResolver.query(mascotaUri, projection,
             selection, selectionArgs, sortOrder)
         if(cursor != null) {
             mAdapter = AdaptadorLista(this, cursor, 0)
