@@ -222,14 +222,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cancelar"
+        android:text="@string/ver_lista"
         android:textSize="20dp"
         app:layout_constraintBaseline_toBaselineOf="@id/enviar"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="40dp"
         android:layout_marginTop="2dp"
         android:backgroundTint="@color/primario"
-        android:id="@+id/cancelar"
+        android:id="@+id/listar"
         />
 
 

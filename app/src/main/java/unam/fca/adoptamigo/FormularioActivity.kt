@@ -85,7 +85,7 @@ class FormularioActivity : AppCompatActivity() {
         }
 
         cancelar.setOnClickListener {
-            val intent = Intent(this@FormularioActivity, MainActivity::class.java)
+            val intent = Intent(this@FormularioActivity, ListaActivity::class.java)
             startActivity(intent)
         }
     }
