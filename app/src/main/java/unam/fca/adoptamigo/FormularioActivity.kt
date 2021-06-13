@@ -80,8 +80,6 @@ class FormularioActivity : AppCompatActivity() {
             val newUri = contentResolver.insert(Contrato.Mascotas.MASCOTA_URI, values)
             val newUserId = newUri!!.lastPathSegment
             mostrarMsg("Guardo exitosamente. ID de tu adopcion es: $newUserId", true)
-            //Toast.makeText(this, "Mascota publicada",
-                //Toast.LENGTH_LONG).show()
         }
 
         listar.setOnClickListener {
