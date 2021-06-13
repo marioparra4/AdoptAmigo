@@ -31,7 +31,7 @@ class FormularioActivity : AppCompatActivity() {
     private lateinit var telefono: EditText
 
     private lateinit var enviar: Button
-    private lateinit var cancelar: Button
+    private lateinit var listar: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +40,7 @@ class FormularioActivity : AppCompatActivity() {
         imagen = findViewById(R.id.inserta)
         boton = findViewById(R.id.botonFoto)
         enviar = findViewById(R.id.enviar)
-        cancelar = findViewById(R.id.cancelar)
+        listar = findViewById(R.id.listar)
         nombre = findViewById(R.id.EdNombre)
         raza = findViewById(R.id.EdRaza)
         edad = findViewById(R.id.EdEdad)
@@ -84,7 +84,7 @@ class FormularioActivity : AppCompatActivity() {
                 //Toast.LENGTH_LONG).show()
         }
 
-        cancelar.setOnClickListener {
+        listar.setOnClickListener {
             val intent = Intent(this@FormularioActivity, ListaActivity::class.java)
             startActivity(intent)
         }
